@@ -4,12 +4,12 @@
 // 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, ...
 // By considering the terms in the Fibonacci sequence whose values do not exceed four million, find the sum of the even-valued terms.
 
-const limit: number = 4000000;
+const limit = 4000000;
 
 function evenTerms(limit: number): number[] {
   const evenTermsArr: number[] = [];
-  let term1: number = 1;
-  let term2: number = 2;
+  let term1 = 1;
+  let term2 = 2;
   let term: number;
 
   for (let i = 0; i < limit; i++) {
@@ -28,7 +28,7 @@ function evenTerms(limit: number): number[] {
 }
 
 const evenTermsArr: number[] = evenTerms(limit);
-const result: number = evenTermsArr.reduce((a, b) => a + b, 0);
+const result: number = evenTermsArr.reduce((a, b) => a + b, 2);
 
 console.log(`Result = ${result}`);
 
