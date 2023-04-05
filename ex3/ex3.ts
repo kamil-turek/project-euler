@@ -11,9 +11,7 @@ function largestPrimeFactor(numberToCheck: number): number {
       if (numberToCheck % i === 0 && i !== 1) {
         numberToCheck /= i;
         if (numberToCheck !== 1) result = numberToCheck;
-        if (numberToCheck === 1) {
-          exitLoop = true;
-        }
+        if (numberToCheck === 1) exitLoop = true;
         break;
       }
     }
