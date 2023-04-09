@@ -1,7 +1,7 @@
 "use strict";
 // The prime factors of 13195 are 5, 7, 13 and 29.
 // What is the largest prime factor of the number 600851475143?
-let numberToCheck = 3453;
+let numberToCheck = 600851475143;
 let exitLoop = false;
 let result!: number;
 
@@ -20,3 +20,5 @@ function largestPrimeFactor(numberToCheck: number): number {
 }
 
 console.log(`Result = ${largestPrimeFactor(numberToCheck)}`);
+
+// Answer: 6857
