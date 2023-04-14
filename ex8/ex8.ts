@@ -11,8 +11,6 @@ const numberAsStringArr =
 
 let result = 0;
 
-console.time();
-
 for (let i = 0; i < numberAsStringArr.length; i++) {
   const tempArr = numberAsStringArr.slice(i, i + 13);
 
@@ -24,7 +22,5 @@ for (let i = 0; i < numberAsStringArr.length; i++) {
 
   if (tempResult > result) result = tempResult;
 }
-
-console.timeEnd();
 
 console.log(result); // Answer: 23514624000
